@@ -1,22 +1,22 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { BiArrowBack } from 'react-icons/bi';
+import { useLocation } from 'react-router-dom';
+// import { BiArrowBack } from 'react-icons/bi';
 import { FaBitcoin } from 'react-icons/fa';
 
 const Details = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const backHome = () => {
-    navigate('/');
-  };
+  // const backHome = () => {
+  //   navigate('/');
+  // };
 
   const { coins } = location.state || { coins: {} };
   const { priceUsd } = coins;
   return (
     <div className="container">
       <div className="details">
-        <BiArrowBack className="back-arrow" onClick={() => backHome()} />
+        {/* <BiArrowBack className="back-arrow" onClick={() => backHome()} /> */}
         <h2 className="detail-title">
           {coins.name}
           <br />

@@ -6,7 +6,6 @@
   --active: yellow;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +34,6 @@ a {
 
 .logo {
   border: 1px solid var(--white);
-  padding: 10px 12px;
 }
 
 .d-flex-space-be {
@@ -102,7 +100,8 @@ nav {
   font-size: 1rem;
   outline: none;
   border: 3px solid var(--red);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 }
 
@@ -150,5 +149,6 @@ form {
 .back-arrow {
   font-size: 1.7rem;
   cursor: pointer;
-  margin-left: 12px
+  margin-left: 12px;
+  color: var(--white);
 }
