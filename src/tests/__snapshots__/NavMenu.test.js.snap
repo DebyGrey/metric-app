@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header>
+  <nav
+    className="container d-flex-space-be"
+  >
+    <div
+      className="logo"
+    >
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        Cryptia
+      </a>
+    </div>
+    <ul>
+      <li>
+        <a
+          className=""
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
