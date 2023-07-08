@@ -1,27 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ListCryptos from './components/ListCryptos';
+import NavMenu from './components/NavMenu';
+import About from './components/pages/About';
+import Page404 from './components/pages/Page404';
+import Details from './components/pages/Details';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <NavMenu />
+        <Routes>
+          <Route path="/" element={<ListCryptos />} />
+          <Route path="/about" element={<About />} />
+          <Route path="details/:name" element={<Details />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,39 +1,150 @@
-.App {
-  text-align: center;
+:root {
+  --red: #9353a1;
+  --light-red: #c27bc1;
+  --light-bg: #bfa3e3;
+  --white: white;
+  --active: yellow;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--light-bg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.logo {
+  border: 1px solid var(--white);
+  padding: 10px 20px;
+}
+
+.d-flex-space-be {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header {
+  background-color: var(--red);
+  height: 80px;
+  padding-inline: 10px;
+}
+
+nav {
+  height: 100%;
+  align-items: center;
+}
+
+.card {
+  padding: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.card:nth-child(4n + 2),
+.card:nth-child(4n + 3) {
+  background-color: var(--light-red);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.py5 {
+  padding-block: 10px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.my5 {
+  margin-top: 10px;
+}
+
+.search-container {
+  width: 100%;
+  padding-inline: 10px;
+}
+
+.search {
+  width: 100%;
+  line-height: 2.5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  border: 3px solid var(--red);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+}
+
+form {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 20px;
+  right: 3rem;
+  cursor: pointer;
+}
+
+.detail-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details {
+  color: var(--white);
+  max-width: 500px;
+  margin: 10px auto;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.details > * {
+  margin-block: 10px;
+}
+
+.details-body > * {
+  margin-block: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.details-body > *:nth-child(even) {
+  background-color: var(--light-red);
+}
+
+.back-arrow {
+  font-size: 2rem;
+  cursor: pointer;
 }
