@@ -55,8 +55,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Link(render)](https://space-travelers-hub-x7hs.onrender.com/)
-- [Project Demo Link](https://www.loom.com/share/b736aa959e014557a41959c866004862)
+- [Live Project Link(render)](https://metric-app-18vd.onrender.com/)
+- [Project Demo Link](https://www.loom.com/share/5273d23543ef4512a1059872f0ca296e?sid=f04b9c2e-949e-456d-b8a9-98640a38373f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
