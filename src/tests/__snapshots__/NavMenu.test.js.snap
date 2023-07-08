@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         href="/"
         onClick={[Function]}
       >
-        Cryptia
+        CRYPSHARE
       </a>
     </div>
     <ul>

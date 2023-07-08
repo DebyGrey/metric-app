@@ -19,7 +19,8 @@ const Details = () => {
         <BiArrowBack className="back-arrow" onClick={() => backHome()} />
         <h2 className="detail-title">
           {coins.name}
-          {' '}
+          <br />
+          {/* {'\n'} */}
           {coins.symbol}
         </h2>
         <div className="details-body">

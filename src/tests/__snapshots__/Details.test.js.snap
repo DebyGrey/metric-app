@@ -31,7 +31,7 @@ Array [
       <h2
         className="detail-title"
       >
-         
+        <br />
       </h2>
       <div
         className="details-body"

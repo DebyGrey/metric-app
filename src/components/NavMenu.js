@@ -5,7 +5,7 @@ const NavMenu = () => (
   <header>
     <nav className="container d-flex-space-be">
       <div className="logo">
-        <NavLink to="/">Cripshare</NavLink>
+        <NavLink to="/">CRYPSHARE</NavLink>
       </div>
       <ul>
         <li>
